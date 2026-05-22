@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <RootNamespace>Duong_Chi_Khang</RootNamespace>
+    <!-- Separate solution projects live in subfolders; do not compile them as part of this web app -->
+    <DefaultItemExcludes>$(DefaultItemExcludes);TrainTicketApi\**;TrainTicketWinForms\**</DefaultItemExcludes>
+  </PropertyGroup>
+
+</Project>

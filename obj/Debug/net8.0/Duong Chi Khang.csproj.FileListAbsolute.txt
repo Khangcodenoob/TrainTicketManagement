@@ -1,0 +1,60 @@
+G:\1822040036 - Duong Chi Khang\Duong Chi Khang\obj\Debug\net8.0\Duong Chi Khang.GeneratedMSBuildEditorConfig.editorconfig
+G:\1822040036 - Duong Chi Khang\Duong Chi Khang\obj\Debug\net8.0\Duong Chi Khang.AssemblyInfoInputs.cache
+G:\1822040036 - Duong Chi Khang\Duong Chi Khang\obj\Debug\net8.0\Duong Chi Khang.AssemblyInfo.cs
+G:\1822040036 - Duong Chi Khang\Duong Chi Khang\obj\Debug\net8.0\Duong Chi Khang.csproj.CoreCompileInputs.cache
+G:\1822040036 - Duong Chi Khang\Duong Chi Khang\obj\Debug\net8.0\Duong Chi Khang.MvcApplicationPartsAssemblyInfo.cache
+G:\1822040036 - Duong Chi Khang\Duong Chi Khang\obj\Debug\net8.0\Duong Chi Khang.RazorAssemblyInfo.cache
+G:\1822040036 - Duong Chi Khang\Duong Chi Khang\obj\Debug\net8.0\Duong Chi Khang.RazorAssemblyInfo.cs
+G:\1822040036 - Duong Chi Khang\Duong Chi Khang\bin\Debug\net8.0\appsettings.Development.json
+G:\1822040036 - Duong Chi Khang\Duong Chi Khang\bin\Debug\net8.0\appsettings.json
+G:\1822040036 - Duong Chi Khang\Duong Chi Khang\bin\Debug\net8.0\Duong Chi Khang.staticwebassets.runtime.json
+G:\1822040036 - Duong Chi Khang\Duong Chi Khang\bin\Debug\net8.0\Duong Chi Khang.exe
+G:\1822040036 - Duong Chi Khang\Duong Chi Khang\bin\Debug\net8.0\Duong Chi Khang.deps.json
+G:\1822040036 - Duong Chi Khang\Duong Chi Khang\bin\Debug\net8.0\Duong Chi Khang.runtimeconfig.json
+G:\1822040036 - Duong Chi Khang\Duong Chi Khang\bin\Debug\net8.0\Duong Chi Khang.dll
+G:\1822040036 - Duong Chi Khang\Duong Chi Khang\bin\Debug\net8.0\Duong Chi Khang.pdb
+G:\1822040036 - Duong Chi Khang\Duong Chi Khang\obj\Debug\net8.0\staticwebassets.build.json
+G:\1822040036 - Duong Chi Khang\Duong Chi Khang\obj\Debug\net8.0\staticwebassets.development.json
+G:\1822040036 - Duong Chi Khang\Duong Chi Khang\obj\Debug\net8.0\staticwebassets\msbuild.Duong Chi Khang.Microsoft.AspNetCore.StaticWebAssets.props
+G:\1822040036 - Duong Chi Khang\Duong Chi Khang\obj\Debug\net8.0\staticwebassets\msbuild.build.Duong Chi Khang.props
+G:\1822040036 - Duong Chi Khang\Duong Chi Khang\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.Duong Chi Khang.props
+G:\1822040036 - Duong Chi Khang\Duong Chi Khang\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.Duong Chi Khang.props
+G:\1822040036 - Duong Chi Khang\Duong Chi Khang\obj\Debug\net8.0\staticwebassets.pack.json
+G:\1822040036 - Duong Chi Khang\Duong Chi Khang\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+G:\1822040036 - Duong Chi Khang\Duong Chi Khang\obj\Debug\net8.0\scopedcss\bundle\Duong Chi Khang.styles.css
+G:\1822040036 - Duong Chi Khang\Duong Chi Khang\obj\Debug\net8.0\scopedcss\projectbundle\Duong Chi Khang.bundle.scp.css
+G:\1822040036 - Duong Chi Khang\Duong Chi Khang\obj\Debug\net8.0\Duong Chi Khang.dll
+G:\1822040036 - Duong Chi Khang\Duong Chi Khang\obj\Debug\net8.0\refint\Duong Chi Khang.dll
+G:\1822040036 - Duong Chi Khang\Duong Chi Khang\obj\Debug\net8.0\Duong Chi Khang.pdb
+G:\1822040036 - Duong Chi Khang\Duong Chi Khang\obj\Debug\net8.0\Duong Chi Khang.genruntimeconfig.cache
+G:\1822040036 - Duong Chi Khang\Duong Chi Khang\obj\Debug\net8.0\ref\Duong Chi Khang.dll
+G:\Khang De Thuong\Duong Chi Khang\bin\Debug\net8.0\appsettings.Development.json
+G:\Khang De Thuong\Duong Chi Khang\bin\Debug\net8.0\appsettings.json
+G:\Khang De Thuong\Duong Chi Khang\bin\Debug\net8.0\Duong Chi Khang.staticwebassets.runtime.json
+G:\Khang De Thuong\Duong Chi Khang\bin\Debug\net8.0\Duong Chi Khang.exe
+G:\Khang De Thuong\Duong Chi Khang\bin\Debug\net8.0\Duong Chi Khang.deps.json
+G:\Khang De Thuong\Duong Chi Khang\bin\Debug\net8.0\Duong Chi Khang.runtimeconfig.json
+G:\Khang De Thuong\Duong Chi Khang\bin\Debug\net8.0\Duong Chi Khang.dll
+G:\Khang De Thuong\Duong Chi Khang\bin\Debug\net8.0\Duong Chi Khang.pdb
+G:\Khang De Thuong\Duong Chi Khang\obj\Debug\net8.0\Duong Chi Khang.GeneratedMSBuildEditorConfig.editorconfig
+G:\Khang De Thuong\Duong Chi Khang\obj\Debug\net8.0\Duong Chi Khang.AssemblyInfoInputs.cache
+G:\Khang De Thuong\Duong Chi Khang\obj\Debug\net8.0\Duong Chi Khang.AssemblyInfo.cs
+G:\Khang De Thuong\Duong Chi Khang\obj\Debug\net8.0\Duong Chi Khang.csproj.CoreCompileInputs.cache
+G:\Khang De Thuong\Duong Chi Khang\obj\Debug\net8.0\Duong Chi Khang.MvcApplicationPartsAssemblyInfo.cache
+G:\Khang De Thuong\Duong Chi Khang\obj\Debug\net8.0\Duong Chi Khang.RazorAssemblyInfo.cache
+G:\Khang De Thuong\Duong Chi Khang\obj\Debug\net8.0\Duong Chi Khang.RazorAssemblyInfo.cs
+G:\Khang De Thuong\Duong Chi Khang\obj\Debug\net8.0\staticwebassets.build.json
+G:\Khang De Thuong\Duong Chi Khang\obj\Debug\net8.0\staticwebassets.development.json
+G:\Khang De Thuong\Duong Chi Khang\obj\Debug\net8.0\staticwebassets\msbuild.Duong Chi Khang.Microsoft.AspNetCore.StaticWebAssets.props
+G:\Khang De Thuong\Duong Chi Khang\obj\Debug\net8.0\staticwebassets\msbuild.build.Duong Chi Khang.props
+G:\Khang De Thuong\Duong Chi Khang\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.Duong Chi Khang.props
+G:\Khang De Thuong\Duong Chi Khang\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.Duong Chi Khang.props
+G:\Khang De Thuong\Duong Chi Khang\obj\Debug\net8.0\staticwebassets.pack.json
+G:\Khang De Thuong\Duong Chi Khang\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+G:\Khang De Thuong\Duong Chi Khang\obj\Debug\net8.0\scopedcss\bundle\Duong Chi Khang.styles.css
+G:\Khang De Thuong\Duong Chi Khang\obj\Debug\net8.0\scopedcss\projectbundle\Duong Chi Khang.bundle.scp.css
+G:\Khang De Thuong\Duong Chi Khang\obj\Debug\net8.0\Duong Chi Khang.dll
+G:\Khang De Thuong\Duong Chi Khang\obj\Debug\net8.0\refint\Duong Chi Khang.dll
+G:\Khang De Thuong\Duong Chi Khang\obj\Debug\net8.0\Duong Chi Khang.pdb
+G:\Khang De Thuong\Duong Chi Khang\obj\Debug\net8.0\Duong Chi Khang.genruntimeconfig.cache
+G:\Khang De Thuong\Duong Chi Khang\obj\Debug\net8.0\ref\Duong Chi Khang.dll

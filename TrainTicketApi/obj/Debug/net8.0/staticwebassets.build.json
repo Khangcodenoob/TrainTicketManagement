@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "2PQCa1gNMEOPADqZOFMnEsnlM4u31RmFOEqqAPy91wI=",
+  "Source": "TrainTicketApi",
+  "BasePath": "_content/TrainTicketApi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
