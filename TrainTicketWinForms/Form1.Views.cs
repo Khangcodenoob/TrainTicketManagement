@@ -417,10 +417,12 @@ public partial class Form1
         var btnPay = UiTheme.CreatePrimaryButton("💳 TT");
         var btnCancel  = UiTheme.CreateDangerButton("✕ Hủy");
         var btnRefresh = UiTheme.CreateSecondaryButton("↺ Tải lại");
+        var btnExport = UiTheme.CreateSecondaryButton("📊 Xuất CSV");
 
         btnPay.SetBounds(330, 230, 90, 36);
         btnCancel.SetBounds(430, 230, 90, 36);
         btnRefresh.SetBounds(530, 230, 100, 36);
+        btnExport.SetBounds(640, 230, 160, 36);
 
         btnPay.Click += async (_, _) => await PayTicketAsync();
         btnCancel.Click  += async (_, _) => await CancelTicketAsync();
@@ -430,6 +432,7 @@ public partial class Form1
             await LoadCustomersAsync();
             await LoadTicketsAsync();
         };
+        btnExport.Click += async (_, _) => await ExportCsvAsync();
 
         formCard.Controls.AddRange(new Control[]
         {
@@ -437,7 +440,7 @@ public partial class Form1
             l3, _pnlSeatMap,
             l4, _txtTicketPrice, l5, _cbxPaymentMethod, btnCreate,
             lSearch, _txtTicketSearch, lAction, _txtTicketActionId,
-            btnPay, btnCancel, btnRefresh
+            btnPay, btnCancel, btnRefresh, btnExport
         });
 
         _ticketsGrid = CreateGrid();

@@ -239,12 +239,20 @@ public partial class Form1 : Form
             Anchor = AnchorStyles.Top | AnchorStyles.Right,
         };
 
+        var btnLogout = UiTheme.CreateDangerButton("🚪  Đăng xuất");
+        btnLogout.Width = 120;
+        btnLogout.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+        btnLogout.Click += async (_, _) => await LogoutAsync();
+
         _topbar.Controls.Add(_titleLabel);
         _topbar.Controls.Add(_globalSearchBox);
         _topbar.Controls.Add(lblUserInfo);
+        _topbar.Controls.Add(btnLogout);
         _topbar.Resize += (_, _) =>
         {
-            lblUserInfo.Left = _topbar.Width - lblUserInfo.Width - 20;
+            btnLogout.Left = _topbar.Width - btnLogout.Width - 10;
+            btnLogout.Top = (_topbar.Height - btnLogout.Height) / 2;
+            lblUserInfo.Left = btnLogout.Left - lblUserInfo.Width - 15;
             lblUserInfo.Top  = (_topbar.Height - lblUserInfo.Height) / 2;
         };
     }

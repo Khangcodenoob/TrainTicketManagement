@@ -679,6 +679,25 @@ public partial class Form1
                 .ToList();
     }
 
+    // ── Logout ──────────────────────────────────────────────────
+    private async Task LogoutAsync()
+    {
+        if (!ConfirmDialog.Show(this, "Bạn có chắc muốn đăng xuất?", "Đăng xuất", "🚪"))
+            return;
+
+        await WrapAsync(async () =>
+        {
+            // Clear token and user info
+            TokenService.Clear();
+            ShowToast("✅  Đã đăng xuất thành công.", UiTheme.Success);
+            
+            // Return to login after a brief delay
+            await Task.Delay(500);
+            ShouldReturnToLogin = true;
+            Close();
+        });
+    }
+
     // ── Wrapper ─────────────────────────────────────────────────
     private async Task WrapAsync(Func<Task> action)
     {

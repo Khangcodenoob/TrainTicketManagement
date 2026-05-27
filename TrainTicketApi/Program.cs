@@ -22,13 +22,13 @@ builder.Services.AddSwaggerGen(options =>
 {
     options.SwaggerDoc("v1", new OpenApiInfo
     {
-        Title = "API Quáº£n lÃ½ bÃ¡n vÃ© tÃ u há»a",
+        Title = "API Quản lý bán vé tàu hỏa",
         Version = "v1",
-        Description = "API backend cÃ³ xÃ¡c thá»±c JWT Ä‘á»ƒ quáº£n lÃ½ tuyáº¿n tÃ u, chuyáº¿n tÃ u, khÃ¡ch hÃ ng, vÃ© tÃ u vÃ  bÃ¡o cÃ¡o."
-    });
+        Description = "API backend có xác thực JWT để quản lý tuyến tàu, chuyến tàu, khách hàng, vé tàu và báo cáo."
+	});
     options.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
     {
-        Description = "Nháº­p theo Ä‘á»‹nh dáº¡ng: Bearer {token_cua_ban}",
+        Description = "Nhập theo định dạng: Bearer {token_cua_ban}",
         Name = "Authorization",
         In = ParameterLocation.Header,
         Type = SecuritySchemeType.ApiKey,

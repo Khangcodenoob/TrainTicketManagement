@@ -3,63 +3,36 @@
   "WorkspaceRootPath": "G:\\TrainTicketManagement\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{78E3B92C-2FAE-4AB6-8576-9A626C87D1CD}|TrainTicketWinForms\\TrainTicketWinForms.csproj|g:\\trainticketmanagement\\trainticketwinforms\\form1.logic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{78E3B92C-2FAE-4AB6-8576-9A626C87D1CD}|TrainTicketWinForms\\TrainTicketWinForms.csproj|solutionrelative:trainticketwinforms\\form1.logic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3DF9AB73-2A62-4CB8-8495-5D1CD8B0A87C}|TrainTicketApi\\TrainTicketApi.csproj|g:\\trainticketmanagement\\trainticketapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3DF9AB73-2A62-4CB8-8495-5D1CD8B0A87C}|TrainTicketApi\\TrainTicketApi.csproj|solutionrelative:trainticketapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78E3B92C-2FAE-4AB6-8576-9A626C87D1CD}|TrainTicketWinForms\\TrainTicketWinForms.csproj|g:\\trainticketmanagement\\trainticketwinforms\\traintripdialog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{78E3B92C-2FAE-4AB6-8576-9A626C87D1CD}|TrainTicketWinForms\\TrainTicketWinForms.csproj|solutionrelative:trainticketwinforms\\traintripdialog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78E3B92C-2FAE-4AB6-8576-9A626C87D1CD}|TrainTicketWinForms\\TrainTicketWinForms.csproj|g:\\trainticketmanagement\\trainticketwinforms\\routedialog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{78E3B92C-2FAE-4AB6-8576-9A626C87D1CD}|TrainTicketWinForms\\TrainTicketWinForms.csproj|solutionrelative:trainticketwinforms\\routedialog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78E3B92C-2FAE-4AB6-8576-9A626C87D1CD}|TrainTicketWinForms\\TrainTicketWinForms.csproj|g:\\trainticketmanagement\\trainticketwinforms\\customerdialog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{78E3B92C-2FAE-4AB6-8576-9A626C87D1CD}|TrainTicketWinForms\\TrainTicketWinForms.csproj|solutionrelative:trainticketwinforms\\customerdialog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78E3B92C-2FAE-4AB6-8576-9A626C87D1CD}|TrainTicketWinForms\\TrainTicketWinForms.csproj|g:\\trainticketmanagement\\trainticketwinforms\\confirmdialog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{78E3B92C-2FAE-4AB6-8576-9A626C87D1CD}|TrainTicketWinForms\\TrainTicketWinForms.csproj|solutionrelative:trainticketwinforms\\confirmdialog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78E3B92C-2FAE-4AB6-8576-9A626C87D1CD}|TrainTicketWinForms\\TrainTicketWinForms.csproj|g:\\trainticketmanagement\\trainticketwinforms\\form1.gridicons.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{78E3B92C-2FAE-4AB6-8576-9A626C87D1CD}|TrainTicketWinForms\\TrainTicketWinForms.csproj|solutionrelative:trainticketwinforms\\form1.gridicons.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{78E3B92C-2FAE-4AB6-8576-9A626C87D1CD}|TrainTicketWinForms\\TrainTicketWinForms.csproj|g:\\trainticketmanagement\\trainticketwinforms\\form1.views.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{78E3B92C-2FAE-4AB6-8576-9A626C87D1CD}|TrainTicketWinForms\\TrainTicketWinForms.csproj|solutionrelative:trainticketwinforms\\form1.views.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{78E3B92C-2FAE-4AB6-8576-9A626C87D1CD}|TrainTicketWinForms\\TrainTicketWinForms.csproj|g:\\trainticketmanagement\\trainticketwinforms\\form1.stations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{78E3B92C-2FAE-4AB6-8576-9A626C87D1CD}|TrainTicketWinForms\\TrainTicketWinForms.csproj|solutionrelative:trainticketwinforms\\form1.stations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{78E3B92C-2FAE-4AB6-8576-9A626C87D1CD}|TrainTicketWinForms\\TrainTicketWinForms.csproj|g:\\trainticketmanagement\\trainticketwinforms\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{78E3B92C-2FAE-4AB6-8576-9A626C87D1CD}|TrainTicketWinForms\\TrainTicketWinForms.csproj|solutionrelative:trainticketwinforms\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{78E3B92C-2FAE-4AB6-8576-9A626C87D1CD}|TrainTicketWinForms\\TrainTicketWinForms.csproj|g:\\trainticketmanagement\\trainticketwinforms\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{78E3B92C-2FAE-4AB6-8576-9A626C87D1CD}|TrainTicketWinForms\\TrainTicketWinForms.csproj|solutionrelative:trainticketwinforms\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3DF9AB73-2A62-4CB8-8495-5D1CD8B0A87C}|TrainTicketApi\\TrainTicketApi.csproj|g:\\trainticketmanagement\\trainticketapi\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3DF9AB73-2A62-4CB8-8495-5D1CD8B0A87C}|TrainTicketApi\\TrainTicketApi.csproj|solutionrelative:trainticketapi\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{78E3B92C-2FAE-4AB6-8576-9A626C87D1CD}|TrainTicketWinForms\\TrainTicketWinForms.csproj|g:\\trainticketmanagement\\trainticketwinforms\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{78E3B92C-2FAE-4AB6-8576-9A626C87D1CD}|TrainTicketWinForms\\TrainTicketWinForms.csproj|solutionrelative:trainticketwinforms\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3DF9AB73-2A62-4CB8-8495-5D1CD8B0A87C}|TrainTicketApi\\TrainTicketApi.csproj|g:\\trainticketmanagement\\trainticketapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{3DF9AB73-2A62-4CB8-8495-5D1CD8B0A87C}|TrainTicketApi\\TrainTicketApi.csproj|solutionrelative:trainticketapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{78E3B92C-2FAE-4AB6-8576-9A626C87D1CD}|TrainTicketWinForms\\TrainTicketWinForms.csproj|g:\\trainticketmanagement\\trainticketwinforms\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{78E3B92C-2FAE-4AB6-8576-9A626C87D1CD}|TrainTicketWinForms\\TrainTicketWinForms.csproj|solutionrelative:trainticketwinforms\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D526E476-3CA8-4BF1-9044-DAB322E1ED14}|Duong Chi Khang.csproj|g:\\trainticketmanagement\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D526E476-3CA8-4BF1-9044-DAB322E1ED14}|Duong Chi Khang.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D526E476-3CA8-4BF1-9044-DAB322E1ED14}|Duong Chi Khang.csproj|g:\\trainticketmanagement\\database.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}",
-      "RelativeMoniker": "D:0:0:{D526E476-3CA8-4BF1-9044-DAB322E1ED14}|Duong Chi Khang.csproj|solutionrelative:database.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|G:\\Khang De Thuong\\Duong Chi Khang\\StudentApi\\Controllers\\StudentsController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|G:\\Khang De Thuong\\Duong Chi Khang\\StudentApi\\Properties\\launchSettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|G:\\Khang De Thuong\\Duong Chi Khang\\StudentApi\\StudentApi.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|G:\\Khang De Thuong\\Duong Chi Khang\\StudentApi\\Data\\AppDbContext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|G:\\Khang De Thuong\\Duong Chi Khang\\StudentApi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{78E3B92C-2FAE-4AB6-8576-9A626C87D1CD}|TrainTicketWinForms\\TrainTicketWinForms.csproj|g:\\trainticketmanagement\\trainticketwinforms\\form1.logic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{78E3B92C-2FAE-4AB6-8576-9A626C87D1CD}|TrainTicketWinForms\\TrainTicketWinForms.csproj|solutionrelative:trainticketwinforms\\form1.logic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -69,7 +42,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Bookmark",
@@ -77,201 +50,107 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Form1.Logic.cs",
-              "DocumentMoniker": "G:\\TrainTicketManagement\\TrainTicketWinForms\\Form1.Logic.cs",
-              "RelativeDocumentMoniker": "TrainTicketWinForms\\Form1.Logic.cs",
-              "ToolTip": "G:\\TrainTicketManagement\\TrainTicketWinForms\\Form1.Logic.cs",
-              "RelativeToolTip": "TrainTicketWinForms\\Form1.Logic.cs",
+              "DocumentIndex": 3,
+              "Title": "CustomerDialog.cs",
+              "DocumentMoniker": "G:\\TrainTicketManagement\\TrainTicketWinForms\\CustomerDialog.cs",
+              "RelativeDocumentMoniker": "TrainTicketWinForms\\CustomerDialog.cs",
+              "ToolTip": "G:\\TrainTicketManagement\\TrainTicketWinForms\\CustomerDialog.cs",
+              "RelativeToolTip": "TrainTicketWinForms\\CustomerDialog.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-27T10:08:36.33Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Form1.Views.cs",
-              "DocumentMoniker": "G:\\TrainTicketManagement\\TrainTicketWinForms\\Form1.Views.cs",
-              "RelativeDocumentMoniker": "TrainTicketWinForms\\Form1.Views.cs",
-              "ToolTip": "G:\\TrainTicketManagement\\TrainTicketWinForms\\Form1.Views.cs",
-              "RelativeToolTip": "TrainTicketWinForms\\Form1.Views.cs",
-              "ViewState": "AgIAAAcBAAAAAAAAAAAcwCgBAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-27T09:56:52.904Z",
+              "WhenOpened": "2026-05-27T11:48:21.063Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Form1.Stations.cs",
-              "DocumentMoniker": "G:\\TrainTicketManagement\\TrainTicketWinForms\\Form1.Stations.cs",
-              "RelativeDocumentMoniker": "TrainTicketWinForms\\Form1.Stations.cs",
-              "ToolTip": "G:\\TrainTicketManagement\\TrainTicketWinForms\\Form1.Stations.cs",
-              "RelativeToolTip": "TrainTicketWinForms\\Form1.Stations.cs",
-              "ViewState": "AgIAAJ8AAAAAAAAAAAAUwEsBAAA+AAAAAAAAAA==",
+              "Title": "RouteDialog.cs",
+              "DocumentMoniker": "G:\\TrainTicketManagement\\TrainTicketWinForms\\RouteDialog.cs",
+              "RelativeDocumentMoniker": "TrainTicketWinForms\\RouteDialog.cs",
+              "ToolTip": "G:\\TrainTicketManagement\\TrainTicketWinForms\\RouteDialog.cs",
+              "RelativeToolTip": "TrainTicketWinForms\\RouteDialog.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-27T09:49:41.777Z",
+              "WhenOpened": "2026-05-27T11:47:53.272Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TrainTripDialog.cs",
+              "DocumentMoniker": "G:\\TrainTicketManagement\\TrainTicketWinForms\\TrainTripDialog.cs",
+              "RelativeDocumentMoniker": "TrainTicketWinForms\\TrainTripDialog.cs",
+              "ToolTip": "G:\\TrainTicketManagement\\TrainTicketWinForms\\TrainTripDialog.cs",
+              "RelativeToolTip": "TrainTicketWinForms\\TrainTripDialog.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-27T11:47:19.891Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "Form1.cs [Design]",
-              "DocumentMoniker": "G:\\TrainTicketManagement\\TrainTicketWinForms\\Form1.cs",
-              "RelativeDocumentMoniker": "TrainTicketWinForms\\Form1.cs",
-              "ToolTip": "G:\\TrainTicketManagement\\TrainTicketWinForms\\Form1.cs [Design]",
-              "RelativeToolTip": "TrainTicketWinForms\\Form1.cs [Design]",
+              "Title": "ConfirmDialog.cs",
+              "DocumentMoniker": "G:\\TrainTicketManagement\\TrainTicketWinForms\\ConfirmDialog.cs",
+              "RelativeDocumentMoniker": "TrainTicketWinForms\\ConfirmDialog.cs",
+              "ToolTip": "G:\\TrainTicketManagement\\TrainTicketWinForms\\ConfirmDialog.cs",
+              "RelativeToolTip": "TrainTicketWinForms\\ConfirmDialog.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAxwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-27T09:36:39.456Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Form1.cs",
-              "DocumentMoniker": "G:\\TrainTicketManagement\\TrainTicketWinForms\\Form1.cs",
-              "RelativeDocumentMoniker": "TrainTicketWinForms\\Form1.cs",
-              "ToolTip": "G:\\TrainTicketManagement\\TrainTicketWinForms\\Form1.cs",
-              "RelativeToolTip": "TrainTicketWinForms\\Form1.cs",
-              "ViewState": "AgIAAEAAAAAAAAAAAAAAwCQAAAAUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-05T10:13:08.953Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "LoginForm.cs",
-              "DocumentMoniker": "G:\\TrainTicketManagement\\TrainTicketWinForms\\LoginForm.cs",
-              "RelativeDocumentMoniker": "TrainTicketWinForms\\LoginForm.cs",
-              "ToolTip": "G:\\TrainTicketManagement\\TrainTicketWinForms\\LoginForm.cs",
-              "RelativeToolTip": "TrainTicketWinForms\\LoginForm.cs",
-              "ViewState": "AgIAAEsAAAAAAAAAAAAYwCsAAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-05T12:32:26.345Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Program.cs",
-              "DocumentMoniker": "G:\\TrainTicketManagement\\TrainTicketWinForms\\Program.cs",
-              "RelativeDocumentMoniker": "TrainTicketWinForms\\Program.cs",
-              "ToolTip": "G:\\TrainTicketManagement\\TrainTicketWinForms\\Program.cs",
-              "RelativeToolTip": "TrainTicketWinForms\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-05T12:17:23.355Z",
+              "WhenOpened": "2026-05-27T11:48:07.292Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "AppDbContext.cs",
-              "DocumentMoniker": "G:\\TrainTicketManagement\\TrainTicketApi\\Data\\AppDbContext.cs",
-              "RelativeDocumentMoniker": "TrainTicketApi\\Data\\AppDbContext.cs",
-              "ToolTip": "G:\\TrainTicketManagement\\TrainTicketApi\\Data\\AppDbContext.cs",
-              "RelativeToolTip": "TrainTicketApi\\Data\\AppDbContext.cs",
-              "ViewState": "AgIAABQAAAAAAAAAAAAuwAAAAAAAAAAAAAAAAA==",
+              "Title": "Form1.GridIcons.cs",
+              "DocumentMoniker": "G:\\TrainTicketManagement\\TrainTicketWinForms\\Form1.GridIcons.cs",
+              "RelativeDocumentMoniker": "TrainTicketWinForms\\Form1.GridIcons.cs",
+              "ToolTip": "G:\\TrainTicketManagement\\TrainTicketWinForms\\Form1.GridIcons.cs",
+              "RelativeToolTip": "TrainTicketWinForms\\Form1.GridIcons.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAxwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-05T12:10:35.858Z",
+              "WhenOpened": "2026-05-27T11:44:25.662Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Form1.Views.cs",
+              "DocumentMoniker": "G:\\TrainTicketManagement\\TrainTicketWinForms\\Form1.Views.cs",
+              "RelativeDocumentMoniker": "TrainTicketWinForms\\Form1.Views.cs",
+              "ToolTip": "G:\\TrainTicketManagement\\TrainTicketWinForms\\Form1.Views.cs",
+              "RelativeToolTip": "TrainTicketWinForms\\Form1.Views.cs",
+              "ViewState": "AgIAAFwAAAAAAAAAAAAwwIcAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-27T11:40:23.364Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "G:\\TrainTicketManagement\\TrainTicketApi\\appsettings.json",
-              "RelativeDocumentMoniker": "TrainTicketApi\\appsettings.json",
-              "ToolTip": "G:\\TrainTicketManagement\\TrainTicketApi\\appsettings.json",
-              "RelativeToolTip": "TrainTicketApi\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-05-05T11:57:32.678Z",
+              "Title": "Form1.Logic.cs",
+              "DocumentMoniker": "G:\\TrainTicketManagement\\TrainTicketWinForms\\Form1.Logic.cs",
+              "RelativeDocumentMoniker": "TrainTicketWinForms\\Form1.Logic.cs",
+              "ToolTip": "G:\\TrainTicketManagement\\TrainTicketWinForms\\Form1.Logic.cs",
+              "RelativeToolTip": "TrainTicketWinForms\\Form1.Logic.cs",
+              "ViewState": "AgIAAOkBAAAAAAAAAAAuwNUBAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-27T11:39:09.973Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "StudentsController.cs",
-              "DocumentMoniker": "G:\\Khang De Thuong\\Duong Chi Khang\\StudentApi\\Controllers\\StudentsController.cs",
-              "RelativeDocumentMoniker": "..\\Khang De Thuong\\Duong Chi Khang\\StudentApi\\Controllers\\StudentsController.cs",
-              "ToolTip": "G:\\Khang De Thuong\\Duong Chi Khang\\StudentApi\\Controllers\\StudentsController.cs",
-              "RelativeToolTip": "..\\Khang De Thuong\\Duong Chi Khang\\StudentApi\\Controllers\\StudentsController.cs",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "G:\\TrainTicketManagement\\TrainTicketApi\\Program.cs",
+              "RelativeDocumentMoniker": "TrainTicketApi\\Program.cs",
+              "ToolTip": "G:\\TrainTicketManagement\\TrainTicketApi\\Program.cs",
+              "RelativeToolTip": "TrainTicketApi\\Program.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAAB4AAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-18T01:03:54.12Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "G:\\TrainTicketManagement\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
-              "ToolTip": "G:\\TrainTicketManagement\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "Controllers\\HomeController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-18T01:03:41.928Z",
+              "WhenOpened": "2026-05-27T11:36:01.693Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Database.sql",
-              "DocumentMoniker": "G:\\TrainTicketManagement\\Database.sql",
-              "RelativeDocumentMoniker": "Database.sql",
-              "ToolTip": "G:\\TrainTicketManagement\\Database.sql",
-              "RelativeToolTip": "Database.sql",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2026-04-11T02:00:56.285Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "launchSettings.json",
-              "DocumentMoniker": "G:\\Khang De Thuong\\Duong Chi Khang\\StudentApi\\Properties\\launchSettings.json",
-              "RelativeDocumentMoniker": "..\\Khang De Thuong\\Duong Chi Khang\\StudentApi\\Properties\\launchSettings.json",
-              "ToolTip": "G:\\Khang De Thuong\\Duong Chi Khang\\StudentApi\\Properties\\launchSettings.json",
-              "RelativeToolTip": "..\\Khang De Thuong\\Duong Chi Khang\\StudentApi\\Properties\\launchSettings.json",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-04-11T01:37:33.191Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "StudentApi.csproj",
-              "DocumentMoniker": "G:\\Khang De Thuong\\Duong Chi Khang\\StudentApi\\StudentApi.csproj",
-              "RelativeDocumentMoniker": "..\\Khang De Thuong\\Duong Chi Khang\\StudentApi\\StudentApi.csproj",
-              "ToolTip": "G:\\Khang De Thuong\\Duong Chi Khang\\StudentApi\\StudentApi.csproj",
-              "RelativeToolTip": "..\\Khang De Thuong\\Duong Chi Khang\\StudentApi\\StudentApi.csproj",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-04-11T01:35:16.333Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "AppDbContext.cs",
-              "DocumentMoniker": "G:\\Khang De Thuong\\Duong Chi Khang\\StudentApi\\Data\\AppDbContext.cs",
-              "RelativeDocumentMoniker": "..\\Khang De Thuong\\Duong Chi Khang\\StudentApi\\Data\\AppDbContext.cs",
-              "ToolTip": "G:\\Khang De Thuong\\Duong Chi Khang\\StudentApi\\Data\\AppDbContext.cs",
-              "RelativeToolTip": "..\\Khang De Thuong\\Duong Chi Khang\\StudentApi\\Data\\AppDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-11T01:30:13.169Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "G:\\Khang De Thuong\\Duong Chi Khang\\StudentApi\\appsettings.json",
-              "RelativeDocumentMoniker": "..\\Khang De Thuong\\Duong Chi Khang\\StudentApi\\appsettings.json",
-              "ToolTip": "G:\\Khang De Thuong\\Duong Chi Khang\\StudentApi\\appsettings.json",
-              "RelativeToolTip": "..\\Khang De Thuong\\Duong Chi Khang\\StudentApi\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-04-11T01:30:06.037Z"
             }
           ]
         }
