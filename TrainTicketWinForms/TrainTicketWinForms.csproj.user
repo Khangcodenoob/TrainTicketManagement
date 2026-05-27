@@ -4,6 +4,9 @@
     <Compile Update="ConfirmDialog.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="CustomerDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -22,8 +25,14 @@
     <Compile Update="LoginForm.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="RouteDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="ShadowPanel.cs">
       <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="TrainTripDialog.cs">
+      <SubType>Form</SubType>
     </Compile>
   </ItemGroup>
 </Project>

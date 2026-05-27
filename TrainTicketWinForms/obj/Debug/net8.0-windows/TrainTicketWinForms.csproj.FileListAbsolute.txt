@@ -18,3 +18,24 @@ G:\Khang De Thuong\Duong Chi Khang\TrainTicketWinForms\obj\Debug\net8.0-windows\
 G:\Khang De Thuong\Duong Chi Khang\TrainTicketWinForms\obj\Debug\net8.0-windows\ref\TrainTicketWinForms.dll
 G:\Khang De Thuong\Duong Chi Khang\TrainTicketWinForms\obj\Debug\net8.0-windows\TrainTicketWinForms.Form1.resources
 G:\Khang De Thuong\Duong Chi Khang\TrainTicketWinForms\obj\Debug\net8.0-windows\TrainTicketWinForms.LoginForm.resources
+G:\TrainTicketManagement\TrainTicketWinForms\bin\Debug\net8.0-windows\TrainTicketWinForms.exe
+G:\TrainTicketManagement\TrainTicketWinForms\bin\Debug\net8.0-windows\TrainTicketWinForms.deps.json
+G:\TrainTicketManagement\TrainTicketWinForms\bin\Debug\net8.0-windows\TrainTicketWinForms.runtimeconfig.json
+G:\TrainTicketManagement\TrainTicketWinForms\bin\Debug\net8.0-windows\TrainTicketWinForms.dll
+G:\TrainTicketManagement\TrainTicketWinForms\bin\Debug\net8.0-windows\TrainTicketWinForms.pdb
+G:\TrainTicketManagement\TrainTicketWinForms\bin\Debug\net8.0-windows\Newtonsoft.Json.dll
+G:\TrainTicketManagement\TrainTicketWinForms\obj\Debug\net8.0-windows\TrainTicketWinForms.csproj.AssemblyReference.cache
+G:\TrainTicketManagement\TrainTicketWinForms\obj\Debug\net8.0-windows\TrainTicketWinForms.Form1.resources
+G:\TrainTicketManagement\TrainTicketWinForms\obj\Debug\net8.0-windows\TrainTicketWinForms.LoginForm.resources
+G:\TrainTicketManagement\TrainTicketWinForms\obj\Debug\net8.0-windows\TrainTicketWinForms.csproj.GenerateResource.cache
+G:\TrainTicketManagement\TrainTicketWinForms\obj\Debug\net8.0-windows\TrainTicketWinForms.GeneratedMSBuildEditorConfig.editorconfig
+G:\TrainTicketManagement\TrainTicketWinForms\obj\Debug\net8.0-windows\TrainTicketWinForms.AssemblyInfoInputs.cache
+G:\TrainTicketManagement\TrainTicketWinForms\obj\Debug\net8.0-windows\TrainTicketWinForms.AssemblyInfo.cs
+G:\TrainTicketManagement\TrainTicketWinForms\obj\Debug\net8.0-windows\TrainTicketWinForms.csproj.CoreCompileInputs.cache
+G:\TrainTicketManagement\TrainTicketWinForms\obj\Debug\net8.0-windows\TrainTicketWinForms.sourcelink.json
+G:\TrainTicketManagement\TrainTicketWinForms\obj\Debug\net8.0-windows\TrainTic.0277B760.Up2Date
+G:\TrainTicketManagement\TrainTicketWinForms\obj\Debug\net8.0-windows\TrainTicketWinForms.dll
+G:\TrainTicketManagement\TrainTicketWinForms\obj\Debug\net8.0-windows\refint\TrainTicketWinForms.dll
+G:\TrainTicketManagement\TrainTicketWinForms\obj\Debug\net8.0-windows\TrainTicketWinForms.pdb
+G:\TrainTicketManagement\TrainTicketWinForms\obj\Debug\net8.0-windows\TrainTicketWinForms.genruntimeconfig.cache
+G:\TrainTicketManagement\TrainTicketWinForms\obj\Debug\net8.0-windows\ref\TrainTicketWinForms.dll

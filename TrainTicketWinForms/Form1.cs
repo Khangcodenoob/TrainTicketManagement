@@ -17,6 +17,7 @@ public partial class Form1 : Form
     private List<TicketItem> _ticketCache = new();
     private List<TrainTripItem> _tripCache = new();
     private List<CustomerItem> _customerCache = new();
+    private List<RouteItem> _routeCache = new();
 
     // ── Layout panels ───────────────────────────────────────────
     private Panel _sidebar = null!;

@@ -121,7 +121,40 @@ public partial class Form1
     private Panel BuildRoutesView()
     {
         var panel = ViewPanel();
-        var toolbar = SectionToolbar("🗺️  Danh sách tuyến tàu", async (_, _) => await LoadRoutesAsync());
+        var toolbar = new Panel
+        {
+            Dock = DockStyle.Top,
+            Height = 56,
+            BackColor = Color.Transparent
+        };
+
+        var lblTitle = new Label
+        {
+            Text = "🗺️  Danh sách tuyến tàu",
+            Font = UiTheme.HeadingFont,
+            AutoSize = true,
+            ForeColor = UiTheme.TextDark,
+            Location = new Point(0, 16)
+        };
+
+        var btnAdd = UiTheme.CreatePrimaryButton("✚  Thêm");
+        btnAdd.Location = new Point(320, 10);
+        btnAdd.Click += async (_, _) => await ShowRouteDialogAsync();
+
+        var btnEdit = UiTheme.CreateSecondaryButton("✎  Sửa");
+        btnEdit.Location = new Point(460, 10);
+        btnEdit.Click += async (_, _) => await EditSelectedRouteAsync();
+
+        var btnDelete = UiTheme.CreateDangerButton("✕  Xóa");
+        btnDelete.Location = new Point(560, 10);
+        btnDelete.Click += async (_, _) => await DeleteSelectedRouteAsync();
+
+        var btnRefresh = UiTheme.CreateSecondaryButton("↺  Tải lại");
+        btnRefresh.Location = new Point(660, 10);
+        btnRefresh.Click += async (_, _) => await LoadRoutesAsync();
+
+        toolbar.Controls.AddRange(new Control[] { lblTitle, btnAdd, btnEdit, btnDelete, btnRefresh });
+
         _routesGrid = CreateGrid();
         panel.Controls.Add(_routesGrid);
         panel.Controls.Add(toolbar);
@@ -132,6 +165,40 @@ public partial class Form1
     private Panel BuildTripsView()
     {
         var panel = ViewPanel();
+
+        var toolbar = new Panel
+        {
+            Dock = DockStyle.Top,
+            Height = 56,
+            BackColor = Color.Transparent
+        };
+
+        var lblTitle = new Label
+        {
+            Text = "🚆  Danh sách chuyến tàu",
+            Font = UiTheme.HeadingFont,
+            AutoSize = true,
+            ForeColor = UiTheme.TextDark,
+            Location = new Point(0, 16)
+        };
+
+        var btnAdd = UiTheme.CreatePrimaryButton("✚  Thêm");
+        btnAdd.Location = new Point(320, 10);
+        btnAdd.Click += async (_, _) => await ShowTrainTripDialogAsync();
+
+        var btnEdit = UiTheme.CreateSecondaryButton("✎  Sửa");
+        btnEdit.Location = new Point(460, 10);
+        btnEdit.Click += async (_, _) => await EditSelectedTrainTripAsync();
+
+        var btnDelete = UiTheme.CreateDangerButton("✕  Xóa");
+        btnDelete.Location = new Point(560, 10);
+        btnDelete.Click += async (_, _) => await DeleteSelectedTrainTripAsync();
+
+        var btnRefresh = UiTheme.CreateSecondaryButton("↺  Tải lại");
+        btnRefresh.Location = new Point(660, 10);
+        btnRefresh.Click += async (_, _) => await LoadTripsAsync();
+
+        toolbar.Controls.AddRange(new Control[] { lblTitle, btnAdd, btnEdit, btnDelete, btnRefresh });
 
         var filterCard = new ShadowPanel
         {
@@ -166,16 +233,17 @@ public partial class Form1
         btnSearch.SetBounds(588, 26, 110, 36);
         btnSearch.Click += async (_, _) => await LoadTripsAsync(true);
 
-        var btnRefresh = UiTheme.CreateSecondaryButton("↺  Tải lại");
-        btnRefresh.SetBounds(706, 26, 110, 36);
-        btnRefresh.Click += async (_, _) => await LoadTripsAsync();
+        var btnFilterRefresh = UiTheme.CreateSecondaryButton("↺  Tải lại");
+        btnFilterRefresh.SetBounds(706, 26, 110, 36);
+        btnFilterRefresh.Click += async (_, _) => await LoadTripsAsync();
 
         filterCard.Controls.AddRange(new Control[]
-            { lblFrom, _txtTripFrom, lblTo, _txtTripTo, lblDate, _dtTripDate, btnSearch, btnRefresh });
+            { lblFrom, _txtTripFrom, lblTo, _txtTripTo, lblDate, _dtTripDate, btnSearch, btnFilterRefresh });
 
         _tripsGrid = CreateGrid();
         panel.Controls.Add(_tripsGrid);
         panel.Controls.Add(filterCard);
+        panel.Controls.Add(toolbar);
         return panel;
     }
 
@@ -234,9 +302,21 @@ public partial class Form1
             Location = new Point(0, 16)
         };
 
+        var btnAdd = UiTheme.CreatePrimaryButton("✚  Thêm");
+        btnAdd.Location = new Point(320, 10);
+        btnAdd.Click += async (_, _) => await ShowCustomerDialogAsync();
+
+        var btnEdit = UiTheme.CreateSecondaryButton("✎  Sửa");
+        btnEdit.Location = new Point(460, 10);
+        btnEdit.Click += async (_, _) => await EditSelectedCustomerAsync();
+
+        var btnDelete = UiTheme.CreateDangerButton("✕  Xóa");
+        btnDelete.Location = new Point(560, 10);
+        btnDelete.Click += async (_, _) => await DeleteSelectedCustomerAsync();
+
         // Search box — fixed position after a generous gap from title
         var searchBox = UiTheme.CreateInput("🔍  Tìm theo tên / email...");
-        searchBox.SetBounds(310, 14, 240, 30);
+        searchBox.SetBounds(700, 14, 240, 30);
         searchBox.TextChanged += (_, _) =>
         {
             var kw = searchBox.Text.Trim();
@@ -249,10 +329,10 @@ public partial class Form1
 
         // Refresh button — placed right after search box
         var btnRefresh = UiTheme.CreateSecondaryButton("↺  Tải lại");
-        btnRefresh.SetBounds(562, 13, 110, 32);
+        btnRefresh.SetBounds(950, 13, 110, 32);
         btnRefresh.Click += async (_, _) => await LoadCustomersAsync();
 
-        toolbar.Controls.AddRange(new Control[] { lblTitle, searchBox, btnRefresh });
+        toolbar.Controls.AddRange(new Control[] { lblTitle, btnAdd, btnEdit, btnDelete, searchBox, btnRefresh });
 
         _customersGrid = CreateGrid();
         panel.Controls.Add(_customersGrid);

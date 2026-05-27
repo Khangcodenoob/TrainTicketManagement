@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "HG9iBz0VEJc=",
+  "dgSpecHash": "WAX4xKdvKIU=",
   "success": true,
-  "projectFilePath": "G:\\Khang De Thuong\\Duong Chi Khang\\TrainTicketApi\\TrainTicketApi.csproj",
+  "projectFilePath": "G:\\TrainTicketManagement\\TrainTicketApi\\TrainTicketApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ADMIN\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\ADMIN\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",

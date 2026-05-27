@@ -61,11 +61,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "G:\\Khang De Thuong\\Duong Chi Khang\\TrainTicketWinForms\\TrainTicketWinForms.csproj",
+      "projectUniqueName": "G:\\TrainTicketManagement\\TrainTicketWinForms\\TrainTicketWinForms.csproj",
       "projectName": "TrainTicketWinForms",
-      "projectPath": "G:\\Khang De Thuong\\Duong Chi Khang\\TrainTicketWinForms\\TrainTicketWinForms.csproj",
+      "projectPath": "G:\\TrainTicketManagement\\TrainTicketWinForms\\TrainTicketWinForms.csproj",
       "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
-      "outputPath": "G:\\Khang De Thuong\\Duong Chi Khang\\TrainTicketWinForms\\obj\\",
+      "outputPath": "G:\\TrainTicketManagement\\TrainTicketWinForms\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

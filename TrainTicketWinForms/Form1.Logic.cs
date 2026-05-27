@@ -1,5 +1,6 @@
 using System.Text;
 using Newtonsoft.Json;
+using TrainTicketWinForms.Dialogs;
 using TrainTicketWinForms.Models;
 using TrainTicketWinForms.Services;
 
@@ -86,9 +87,9 @@ public partial class Form1
         await WrapAsync(async () =>
         {
             var json = await _httpClient.GetStringAsync("api/routes");
-            var data = JsonConvert.DeserializeObject<ApiResponse<List<RouteItem>>>(json, JsonSettings)?.Data
-                       ?? new List<RouteItem>();
-            _routesGrid.DataSource = data;
+            _routeCache = JsonConvert.DeserializeObject<ApiResponse<List<RouteItem>>>(json, JsonSettings)?.Data
+                          ?? new List<RouteItem>();
+            _routesGrid.DataSource = _routeCache.ToList();
         });
     }
 
@@ -96,12 +97,11 @@ public partial class Form1
     {
         await WrapAsync(async () =>
         {
-            var endpoint = "api/train-trips";
+            var endpoint = "api/train-trips/search";
             if (useFilter)
-                endpoint = $"api/train-trips/search" +
-                           $"?departureStation={Uri.EscapeDataString(_txtTripFrom.Text.Trim())}" +
-                           $"&arrivalStation={Uri.EscapeDataString(_txtTripTo.Text.Trim())}" +
-                           $"&departureDate={_dtTripDate.Value:yyyy-MM-dd}";
+                endpoint += $"?departureStation={Uri.EscapeDataString(_txtTripFrom.Text.Trim())}" +
+                            $"&arrivalStation={Uri.EscapeDataString(_txtTripTo.Text.Trim())}" +
+                            $"&departureDate={_dtTripDate.Value:yyyy-MM-dd}";
 
             var json = await _httpClient.GetStringAsync(endpoint);
             _tripCache = JsonConvert.DeserializeObject<ApiResponse<List<TrainTripItem>>>(json, JsonSettings)?.Data
@@ -124,6 +124,292 @@ public partial class Form1
 
             // Refresh customer combobox
             RefreshCustomerCombo();
+        });
+    }
+
+    private async Task ShowRouteDialogAsync(RouteItem? route = null)
+    {
+        using var dialog = new RouteDialog(route);
+        if (dialog.ShowDialog(this) != DialogResult.OK) return;
+
+        if (route is null)
+            await CreateRouteAsync(dialog.Result!);
+        else
+            await UpdateRouteAsync(route.RouteId, dialog.Result!);
+    }
+
+    private async Task EditSelectedRouteAsync()
+    {
+        var selected = _routesGrid.CurrentRow?.DataBoundItem as RouteItem;
+        if (selected is null) { ShowToast("⚠️  Vui lòng chọn tuyến tàu để sửa.", UiTheme.Warning); return; }
+        await ShowRouteDialogAsync(selected);
+    }
+
+    private async Task DeleteSelectedRouteAsync()
+    {
+        var selected = _routesGrid.CurrentRow?.DataBoundItem as RouteItem;
+        if (selected is null) { ShowToast("⚠️  Vui lòng chọn tuyến tàu để xóa.", UiTheme.Warning); return; }
+        await DeleteRouteAsync(selected.RouteId);
+    }
+
+    private async Task ShowTrainTripDialogAsync(TrainTripItem? trip = null)
+    {
+        using var dialog = new TrainTripDialog(_routeCache, trip);
+        if (dialog.ShowDialog(this) != DialogResult.OK) return;
+
+        if (trip is null)
+            await CreateTrainTripAsync(dialog.Result!);
+        else
+            await UpdateTrainTripAsync(trip.TrainTripId, dialog.Result!);
+    }
+
+    private async Task EditSelectedTrainTripAsync()
+    {
+        var selected = _tripsGrid.CurrentRow?.DataBoundItem as TrainTripItem;
+        if (selected is null) { ShowToast("⚠️  Vui lòng chọn chuyến tàu để sửa.", UiTheme.Warning); return; }
+        await ShowTrainTripDialogAsync(selected);
+    }
+
+    private async Task DeleteSelectedTrainTripAsync()
+    {
+        var selected = _tripsGrid.CurrentRow?.DataBoundItem as TrainTripItem;
+        if (selected is null) { ShowToast("⚠️  Vui lòng chọn chuyến tàu để xóa.", UiTheme.Warning); return; }
+        await DeleteTrainTripAsync(selected.TrainTripId);
+    }
+
+    private async Task ShowCustomerDialogAsync(CustomerItem? customer = null)
+    {
+        using var dialog = new CustomerDialog(customer);
+        if (dialog.ShowDialog(this) != DialogResult.OK) return;
+
+        if (customer is null)
+            await CreateCustomerAsync(dialog.Result!);
+        else
+            await UpdateCustomerAsync(customer.CustomerId, dialog.Result!);
+    }
+
+    private async Task EditSelectedCustomerAsync()
+    {
+        var selected = _customersGrid.CurrentRow?.DataBoundItem as CustomerItem;
+        if (selected is null) { ShowToast("⚠️  Vui lòng chọn khách hàng để sửa.", UiTheme.Warning); return; }
+        await ShowCustomerDialogAsync(selected);
+    }
+
+    private async Task DeleteSelectedCustomerAsync()
+    {
+        var selected = _customersGrid.CurrentRow?.DataBoundItem as CustomerItem;
+        if (selected is null) { ShowToast("⚠️  Vui lòng chọn khách hàng để xóa.", UiTheme.Warning); return; }
+        await DeleteCustomerAsync(selected.CustomerId);
+    }
+
+    private async Task CreateRouteAsync(RouteItem route)
+    {
+        await WrapAsync(async () =>
+        {
+            var payload = new
+            {
+                DepartureStation = route.DepartureStation,
+                ArrivalStation   = route.ArrivalStation,
+                DistanceKm       = route.DistanceKm,
+                Status           = route.Status
+            };
+            var content = new StringContent(JsonConvert.SerializeObject(payload), Encoding.UTF8, "application/json");
+            var response = await _httpClient.PostAsync("api/routes", content);
+            var body = await response.Content.ReadAsStringAsync();
+            if (!response.IsSuccessStatusCode)
+            {
+                ShowToast($"❌  {body}", UiTheme.Danger);
+                return;
+            }
+            ShowToast("✅  Thêm tuyến tàu thành công.", UiTheme.Success);
+            await LoadRoutesAsync();
+        });
+    }
+
+    private async Task UpdateRouteAsync(int routeId, RouteItem route)
+    {
+        await WrapAsync(async () =>
+        {
+            var payload = new
+            {
+                DepartureStation = route.DepartureStation,
+                ArrivalStation   = route.ArrivalStation,
+                DistanceKm       = route.DistanceKm,
+                Status           = route.Status
+            };
+            var content = new StringContent(JsonConvert.SerializeObject(payload), Encoding.UTF8, "application/json");
+            var response = await _httpClient.PutAsync($"api/routes/{routeId}", content);
+            var body = await response.Content.ReadAsStringAsync();
+            if (!response.IsSuccessStatusCode)
+            {
+                ShowToast($"❌  {body}", UiTheme.Danger);
+                return;
+            }
+            ShowToast("✅  Cập nhật tuyến tàu thành công.", UiTheme.Success);
+            await LoadRoutesAsync();
+        });
+    }
+
+    private async Task DeleteRouteAsync(int routeId)
+    {
+        if (!ConfirmDialog.Show(this, $"Bạn có chắc muốn xóa tuyến #{routeId}?", "Xóa tuyến", "🗑️"))
+            return;
+
+        await WrapAsync(async () =>
+        {
+            var response = await _httpClient.DeleteAsync($"api/routes/{routeId}");
+            var body = await response.Content.ReadAsStringAsync();
+            if (!response.IsSuccessStatusCode)
+            {
+                ShowToast($"❌  {body}", UiTheme.Danger);
+                return;
+            }
+            ShowToast("✅  Xóa tuyến tàu thành công.", UiTheme.Success);
+            await LoadRoutesAsync();
+        });
+    }
+
+    private async Task CreateTrainTripAsync(TrainTripItem trip)
+    {
+        await WrapAsync(async () =>
+        {
+            var payload = new
+            {
+                TrainCode      = trip.TrainCode,
+                RouteId        = trip.RouteId,
+                DepartureTime  = trip.DepartureTime,
+                ArrivalTime    = trip.ArrivalTime,
+                TotalSeats     = trip.TotalSeats,
+                AvailableSeats = trip.AvailableSeats,
+                BaseTicketPrice= trip.BaseTicketPrice,
+                Status         = trip.Status
+            };
+            var content = new StringContent(JsonConvert.SerializeObject(payload), Encoding.UTF8, "application/json");
+            var response = await _httpClient.PostAsync("api/train-trips", content);
+            var body = await response.Content.ReadAsStringAsync();
+            if (!response.IsSuccessStatusCode)
+            {
+                ShowToast($"❌  {body}", UiTheme.Danger);
+                return;
+            }
+            ShowToast("✅  Thêm chuyến tàu thành công.", UiTheme.Success);
+            await LoadTripsAsync();
+        });
+    }
+
+    private async Task UpdateTrainTripAsync(int tripId, TrainTripItem trip)
+    {
+        await WrapAsync(async () =>
+        {
+            var payload = new
+            {
+                TrainCode      = trip.TrainCode,
+                RouteId        = trip.RouteId,
+                DepartureTime  = trip.DepartureTime,
+                ArrivalTime    = trip.ArrivalTime,
+                TotalSeats     = trip.TotalSeats,
+                AvailableSeats = trip.AvailableSeats,
+                BaseTicketPrice= trip.BaseTicketPrice,
+                Status         = trip.Status
+            };
+            var content = new StringContent(JsonConvert.SerializeObject(payload), Encoding.UTF8, "application/json");
+            var response = await _httpClient.PutAsync($"api/train-trips/{tripId}", content);
+            var body = await response.Content.ReadAsStringAsync();
+            if (!response.IsSuccessStatusCode)
+            {
+                ShowToast($"❌  {body}", UiTheme.Danger);
+                return;
+            }
+            ShowToast("✅  Cập nhật chuyến tàu thành công.", UiTheme.Success);
+            await LoadTripsAsync();
+        });
+    }
+
+    private async Task DeleteTrainTripAsync(int tripId)
+    {
+        if (!ConfirmDialog.Show(this, $"Bạn có chắc muốn xóa chuyến tàu #{tripId}?", "Xóa chuyến tàu", "🗑️"))
+            return;
+
+        await WrapAsync(async () =>
+        {
+            var response = await _httpClient.DeleteAsync($"api/train-trips/{tripId}");
+            var body = await response.Content.ReadAsStringAsync();
+            if (!response.IsSuccessStatusCode)
+            {
+                ShowToast($"❌  {body}", UiTheme.Danger);
+                return;
+            }
+            ShowToast("✅  Xóa chuyến tàu thành công.", UiTheme.Success);
+            await LoadTripsAsync();
+        });
+    }
+
+    private async Task CreateCustomerAsync(CustomerItem customer)
+    {
+        await WrapAsync(async () =>
+        {
+            var payload = new
+            {
+                FullName       = customer.FullName,
+                PhoneNumber    = customer.PhoneNumber,
+                Email          = customer.Email,
+                IdentityNumber = customer.IdentityNumber,
+                Address        = customer.Address
+            };
+            var content = new StringContent(JsonConvert.SerializeObject(payload), Encoding.UTF8, "application/json");
+            var response = await _httpClient.PostAsync("api/customers", content);
+            var body = await response.Content.ReadAsStringAsync();
+            if (!response.IsSuccessStatusCode)
+            {
+                ShowToast($"❌  {body}", UiTheme.Danger);
+                return;
+            }
+            ShowToast("✅  Thêm khách hàng thành công.", UiTheme.Success);
+            await LoadCustomersAsync();
+        });
+    }
+
+    private async Task UpdateCustomerAsync(int customerId, CustomerItem customer)
+    {
+        await WrapAsync(async () =>
+        {
+            var payload = new
+            {
+                FullName       = customer.FullName,
+                PhoneNumber    = customer.PhoneNumber,
+                Email          = customer.Email,
+                IdentityNumber = customer.IdentityNumber,
+                Address        = customer.Address
+            };
+            var content = new StringContent(JsonConvert.SerializeObject(payload), Encoding.UTF8, "application/json");
+            var response = await _httpClient.PutAsync($"api/customers/{customerId}", content);
+            var body = await response.Content.ReadAsStringAsync();
+            if (!response.IsSuccessStatusCode)
+            {
+                ShowToast($"❌  {body}", UiTheme.Danger);
+                return;
+            }
+            ShowToast("✅  Cập nhật khách hàng thành công.", UiTheme.Success);
+            await LoadCustomersAsync();
+        });
+    }
+
+    private async Task DeleteCustomerAsync(int customerId)
+    {
+        if (!ConfirmDialog.Show(this, $"Bạn có chắc muốn xóa khách hàng #{customerId}?", "Xóa khách hàng", "🗑️"))
+            return;
+
+        await WrapAsync(async () =>
+        {
+            var response = await _httpClient.DeleteAsync($"api/customers/{customerId}");
+            var body = await response.Content.ReadAsStringAsync();
+            if (!response.IsSuccessStatusCode)
+            {
+                ShowToast($"❌  {body}", UiTheme.Danger);
+                return;
+            }
+            ShowToast("✅  Xóa khách hàng thành công.", UiTheme.Success);
+            await LoadCustomersAsync();
         });
     }
 
